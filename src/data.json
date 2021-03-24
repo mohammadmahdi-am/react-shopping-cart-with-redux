@@ -4,70 +4,70 @@
             "_id" : 1,
             "model" : "Galaxy A02s SM-A025F/DS",
             "price" : 3349000,
-            "availableColor" : ["blue","black","red"],
+            "availableColors" : ["Blue","Black","Red"],
             "image" : "/images/image1.jpg"
         },
         {
             "_id" : 2,
             "model" : "Galaxy A71 SM-A715F/DS",
             "price" : 9299000,
-            "availableColor" : ["blue","black","grey","green"],
+            "availableColors" : ["Blue","Black","Grey","Green","Purple"],
             "image" : "/images/image2.jpg"
         },
         {
             "_id" : 3,
             "model" : "Galaxy A10s SM-A107F/DS",
             "price" : 3149000,
-            "availableColor" : ["blue","black","red"],
+            "availableColors" : ["Blue","Black","Red"],
             "image" : "/images/image3.jpg"
         },
         {
             "_id" : 4,
             "model" : "Galaxy A01 Core SM-A013G/DS",
             "price" : 2019000,
-            "availableColor" : ["blue","black"],
+            "availableColors" : ["Blue","Black"],
             "image" : "/images/image4.jpg"
         },
         {
             "_id" : 5,
             "model" : "Galaxy A31 SM-A315F/DS",
             "price" : 5449000,
-            "availableColor" : ["blue","black","grey","white"],
+            "availableColors" : ["Blue","Black","Grey","White"],
             "image" : "/images/image5.jpg"
         },
         {
             "_id" : 6,
             "model" : "Galaxy A21S SM-A217F/DS",
             "price" : 4699000,
-            "availableColor" : ["blue","black","white"],
+            "availableColors" : ["Blue","Black","White"],
             "image" : "/images/image6.jpg"
         },
         {
             "_id" : 7,
             "model" : "Galaxy S20 Ultra SM-G988B/DS",
             "price" : 26900000,
-            "availableColor" : ["grey","white"],
+            "availableColors" : ["Grey","White"],
             "image" : "/images/image7.jpg"
         },
         {
             "_id" : 8,
             "model" : "Galaxy A02 SM-A022F/DS",
             "price" : 2729000,
-            "availableColor" : ["grey","red","black","blue"],
+            "availableColors" : ["Grey","Red","Black","Blue"],
             "image" : "/images/image8.jpg"
         },
         {
             "_id" : 9,
             "model" : "Galaxy A12 SM-A125F/DS",
             "price" : 4199000,
-            "availableColor" : ["white","black","blue"],
+            "availableColors" : ["White","Black","Blue"],
             "image" : "/images/image9.jpg"
         },
         {
             "_id" : 10,
             "model" : "Galaxy A51 SM-A515F/DSN",
             "price" : 8800000,
-            "availableColor" : ["grey","blue"],
+            "availableColors" : ["Grey","Blue"],
             "image" : "/images/image10.jpg"
         }
     ]
