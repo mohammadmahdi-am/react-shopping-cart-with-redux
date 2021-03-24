@@ -1,9 +1,11 @@
 import React from "react";
+import Reveal from 'react-reveal/Reveal';
 
 function Products(props) {
   return (
     <div className="row">
       {props.products.map((product,index) => (
+        <Reveal>
         <div className="col-12 col-md-4 text-center my-5" key={index}>
           <img
             src={product.image}
@@ -23,6 +25,7 @@ function Products(props) {
             </button>
           </div>
         </div>
+        </Reveal>
       ))}
     </div>
   );
