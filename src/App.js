@@ -100,7 +100,7 @@ function App() {
             <Products products={products} addToCart={addToCart} />
           </main>
           <aside className="col-md-3 col-12 order-1 order-md-2 my-5 text-center">
-            <Cart cartItems={cartItems} removeFromCart={removeFromCart}/></aside>
+            <Cart cartItems={cartItems} setCartItems={setCartItems} removeFromCart={removeFromCart}/></aside>
         </div>
       </div>
 
