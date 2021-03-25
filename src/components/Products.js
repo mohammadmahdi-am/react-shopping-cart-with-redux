@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import Reveal from 'react-reveal/Reveal';
 import {connect} from 'react-redux'
-import {fetchProducts} from '../redux/index'
+import {fetchProducts,addToCart} from '../redux'
 function Products(props) {
   useEffect(()=>{
     props.fetchProducts()
@@ -41,13 +41,15 @@ function Products(props) {
 const mapStateToProps = (state) => {
   return {
   listOfProducts : state.products.listOfProducts,
+  
 
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return{
-    fetchProducts : () => {dispatch(fetchProducts())}
+    fetchProducts : () => {dispatch(fetchProducts())},
+    addToCart : (product) => dispatch(addToCart(product))
   }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Products);

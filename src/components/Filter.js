@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {setFilter,setSort} from '../redux/products/productsActions'
+import {setFilter,setSort} from '../redux'
 
 function Filter(props) {
     return (
