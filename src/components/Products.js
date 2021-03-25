@@ -1,12 +1,18 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Reveal from 'react-reveal/Reveal';
-
+import {connect} from 'react-redux'
+import {fetchProducts,addToCart} from '../redux'
 function Products(props) {
+  useEffect(()=>{
+    props.fetchProducts()
+
+
+  },[])
   return (
     <div className="row">
-      {props.products.map((product,index) => (
-        <Reveal>
-        <div className="col-12 col-md-4 text-center my-5" key={index}>
+      { props.listOfProducts ? props.listOfProducts.mobiles.map((product,index) => (
+        <Reveal key={index}>
+        <div className="col-12 col-md-4 text-center my-5" >
           <img
             src={product.image}
             className="d-inline-block w-50 h-50 "
@@ -26,9 +32,25 @@ function Products(props) {
           </div>
         </div>
         </Reveal>
-      ))}
+      )) : "Loading ..."}
     </div>
   );
+  
 }
 
-export default Products;
+const mapStateToProps = (state) => {
+  return {
+  listOfProducts : state.products.listOfProducts,
+  
+
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return{
+    fetchProducts : () => {dispatch(fetchProducts())},
+    addToCart : (product) => dispatch(addToCart(product))
+  }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Products);
+
